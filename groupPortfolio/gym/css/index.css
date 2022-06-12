@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-boxs;
+    
+}
+html{
+    background-image: url(/css/images/indexpic1.jpg);
+    /* background-position: center; -*/ 
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50%;
+    width: 100%;
+    color: #fff;
+    font-family: 'Balsamiq Sans', cursive;
+
+    
+
+}
+
+ .logo img{
+    width: 100px;
+    height: 70px;
+}
+.logos{
+    margin-left: 20px;
+}
+.navBar{
+    /* border: 2px solid rebeccapurple; */
+    display: flex;
+    justify-content: space-betweens;
+    height: 100px;
+    
+    
+
+}
+nav .items ul{
+    display: flex;
+}
+nav .items ul li {
+    list-style: none;
+
+}
+
+
+.Heading h1{
+    font-size: 1rem;
+    font-weight: 3px;
+    margin-top: 50px;
+    margin-left: -100px;
+}
+.items{
+    margin: auto;
+}
+.items a{
+    list-style: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 50px;
+    font-size: 16px;
+    
+
+}
+ .items li ul a :first-child{
+    color: #FFA500;
+}
+.items a:hover{
+    border-bottom: 3px solid #FFA500;
+
+}
+
+main{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    height: 200px;
+    
+
+
+}
+.container section h1{
+    font-size: 4rem;
+    margin-right: 30px;
+    text-shadow: 30px black;
+    text-transform: uppercase;
+    
+}
+em{
+    color: #FFA500;
+    font-style: normal;
+
+}
+.container section p{
+    font-size: 2rem;
+}
+ button{
+    margin-top: 25px;
+    width: 150px;
+    height: 40px; 
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    text-transform: uppercase;
+    
+    
+    
+}
+.btn1 button{
+    background: #FFA500;
+    border: 1px solid black;
+
+    
+}
+.btn2 button:hover{
+    background: #FFA500;
+    border: 2px solid black;
+}
+.btn2 button{
+    background: #000;
+    border: 1px solid white;
+}
+.btn1 button:hover{
+    background: #000;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+    
+

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#body{
+    background-image: url(/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+
+
+  
+
+}
+#container-digitalclock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vw;
+    width: 50vw;
+    /* background: red; */
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+
+    
+}
+.style{
+    margin: 0.3rem;
+    font-size: 5rem;
+    font-weight: 5px;
+    color: #950750;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#hour{
+color: #ff652f;
+}
+#min{
+    color: #ff652f;
+    }
+    #sec{
+        color: #fccd04;
+        }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock </title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+#body{
+    background-image: url(/digitalClock/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+
+
+  
+
+}
+#container-digitalclock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 30vw;
+    width: 50vw;
+    /* background: red; */
+    position: absolute;
+    top: 30%;
+    left: 25%;
+
+
+    
+}
+.style{
+    margin: 0.3rem;
+    font-size: 5rem;
+    font-weight: 5px;
+    color: #950750;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#hour{
+color: #ff652f;
+}
+#min{
+    color: #ff652f;
+    }
+    #sec{
+        color: #fccd04;
+        }
+    </style>
+</head> 
+<body id="body">
+    <div id="container-digitalclock">
+        <div id="hour" class="style">00</div>
+        <span class="style">:</span>
+        <div id="min" class="style">00</div>
+        <span class="style">:</span>
+        <div id="sec" class="style">00</div>
+        <div id="ap" class="style">AM</div>
+    </div>
+    <script src="/js/script.js"></script>
+
+
+    
+    <script>
+        let a= setInterval(digitalClock ,1000);
+
+
+
+function  digitalClock(){
+    
+let d=new Date();
+let h=d.getHours();
+let m=d.getMinutes();
+let s=d.getSeconds();
+
+if(h>12){
+    let ampm=document.getElementById("ap").innerHTML="PM";
+}else{
+    let ampm=document.getElementById("ap").innerHTML="AM";
+
+
+}
+
+if(h>=12){
+    h=h-12;
+}
+
+if(h<10){
+    h= "0"+h;
+}
+if(m<10){
+    m= "0"+m;
+}
+if(s<10){
+    s= "0"+s;
+}
+
+
+
+
+
+
+let hour= document.getElementById("hour").innerHTML=h;
+let sec= document.getElementById("sec").innerHTML=s;
+let min= document.getElementById("min").innerHTML=m;
+
+}
+
+
+    </script>
+</body>
+</html>

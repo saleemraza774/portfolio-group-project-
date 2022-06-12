@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR foods</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" media="screen and (max-width: 1150 px)" href="/css/phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Hammersmith+One&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Balsamiq+Sans&family=Hammersmith+One&display=swap"
+        rel="stylesheet">
+        <style>
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Hammersmith One', sans-serif;
+
+}
+/* ........navbar.... */
+#navbar{
+    position: relative;
+}
+nav#navbar{
+   
+    display: flex;
+    align-items: center;
+    /* font-family: 'Baloo Bhaijaan 2', cursive; */
+    font-family: 'Hammersmith One', sans-serif;
+
+    
+}
+ #navbar::before{
+    content: "";
+    background: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100;
+    z-index: -1; 
+    opacity: 0.3;
+}
+/* .....navbar .logo and image..... */
+.logo{
+    margin: 10px 34px;
+}
+.logo img{
+    height: 59px;
+    margin: 3px 6px;
+    
+}
+/* .....navbar list styling: */
+#navbar ul{
+    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    
+
+
+
+}
+#navbar ul li{
+    font-size: 1.3rem;
+
+    
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    /* color: rgb(129, 7, 7); */
+    color: #fff;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: white;
+    background: #001f3f;
+}
+/* body{
+    background: url(/css/images/bg1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+
+
+
+/* home section  */
+
+#home{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2px 300px;
+    height: 578px;
+}
+
+#home::before{
+    content: "";
+    background: url(/food/css/images/bg1.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 1.2;
+}
+#home h1{
+    color: #fff;
+
+}
+#home p{
+    color: #fff;
+    font-size: 1.2rem;
+    
+}
+/* services section  */
+#services{
+margin: 34px;
+display: flex;
+
+}
+#services .box{
+    border: 2px solid #001f3f;
+    padding: 34px;
+    margin: 3px 4px;
+    border-radius: 23px;
+    background-color: #e7edf4;
+
+
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+/* client section */
+#client-section{
+    height: 334px;
+
+}
+#client-section::before{
+    content: "";
+    background: url(/food/css/images/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 50%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.client-item{
+padding: 34px;
+}
+#clients img{
+height: 124px;
+}
+
+/* contact section */
+
+#contact{
+    position: relative;
+
+}
+#contact::before{
+    content: "";
+    background: url(/food/css/images/contact2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1; 
+    opacity: 1.2;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+    border-radius: 9px;
+    font-size: 1.5rem;
+}
+#contact-box input{
+width: 270px;
+height: 30px;
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+#contact-box form{
+    width: 40%;
+
+}
+#contact-box label{
+    font-size:  1.3rem;
+}
+#contact-box button{
+    color: #fff;
+    background: #000;
+    width: 100px;
+    height: 30px;
+    border-radius: 9px;
+    border: 2px solid white;;
+}
+#contact-box button:hover{
+    background-color:#001f3f;
+}
+
+footer{
+    color: #fff;
+    background-color: #001f3f;
+    padding: 9px 20px;
+}
+
+/* utility classes */
+#h-primary{
+    font-size: 2.9rem;
+    padding: 12px;
+    font-family: 'Hammersmith One', sans-serif;
+}
+#h-secondary{
+    font-size: 2.4rem;
+    font-family: 'Hammersmith One', sans-serif;
+
+}
+.center{
+    text-align: center;
+
+}
+.btn{
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid white;
+    background-color: #FF851B;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 23px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #001f3f;
+}
+
+
+        </style>
+
+</head>
+
+<body>
+    <nav id="navbar">
+        <div class="logo"><img src="/food/css/images/logo2.png" alt="sr foods"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h1 id="h-primary">welcome to SR foods</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.laboriosam rem repudiandae incidunt error
+            nobisdoloribus! </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,.</p>
+        <button class="btn">order now</button>
+    </section>
+
+    <section id="services-container">
+        <h1 id="h-primary" class="center">
+            Our Services
+        </h1>
+        <div id="services">
+            <div class="box">
+            <img src="/food/css/images/img/1.png" alt="">
+            <h2 class="h-secondary center">food odering</h1>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis. Minima nobis, aliquam obcaecati maxime atque praesentium soluta blanditiis fuga quam doloribus harum, delectus voluptas!</p>
+        </div>
+        <div class="box">
+            <img src="food/css/images/img/2.png" alt="">
+            <h2 class="h-secondary center">food catering</h1>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis. Minima nobis, aliquam obcaecati maxime atque praesentium soluta blanditiis fuga quam doloribus harum, delectus voluptas!</p>
+        </div>
+        <div class="box">
+            <img src="food/css/images/img/3.png" alt="">
+            <h2 class="h-secondary center">bulk odering </h1>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, debitis. Minima nobis, aliquam obcaecati maxime atque praesentium soluta blanditiis fuga quam doloribus harum, delectus voluptas!</p>
+        </div>
+        </div>
+
+    </section>
+
+    <section id="client-section">
+        <h1 class="h-primary center">Our Clients</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="/food/css/images/img/service1.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="/food/css/images/img/service2.png" alt="Our Client">
+            </div>
+          
+            <div class="client-item">
+                <img src="/food/css/images/img/service3.png" alt="Our Client">
+            </div>
+            <div class="client-item">
+                <img src="/food/css/images/img/service4.png" alt="Our Client">
+            </div>
+        </div>
+
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                   <div> <label for="name">Name: </label></div>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <div><label for="email">Email: </label></div>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                   <div> <label for="phone">Phone Number: </label></div>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                  <div>  <label for="message">Message: </label></div>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div><button id=" btn1">submit </button></div>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.SRfoods.com. All rights reserved!
+        </div>
+    </footer>
+</body>
+
+</html>

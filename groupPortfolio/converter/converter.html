@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>converter</title>
+  <link rel="stylesheet" href="/converter.css">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-boxz;
+
+}
+
+.container {
+    border: 3px solid black;
+    height: 500px;
+    width: 80%;
+    margin: 30px auto;
+    background-color: #FF851B;
+
+
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 5.5rem;
+    margin-bottom: 3rem;
+}
+
+#h4 {
+    display: none;
+    text-align: center;
+    padding-bottom: 2rem;
+    color: red;
+}
+
+.container .group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.form-control {
+    width: 15rem;
+    height: 2rem;
+    border: 3px solid #111111;
+    font-size: large;
+}
+
+.text {
+    font-size: 1.5rem;
+    padding-left: 15px;
+}
+#input1:hover{
+    background-color: rgb(56, 56, 52);
+    color: #fff;
+}
+
+#btn {
+    text-align: center;
+    border-radius: 8px;
+    width: 8rem;
+    height: 2.8rem;
+    border: 3px solid #111111;
+    margin-top: 5rem;
+    margin-left: 32rem;
+    cursor: pointer;
+
+
+}
+
+#btn:hover {
+    background: #001f3f;
+    color: #ffff;
+}
+</style>
+
+
+</head>
+
+<body>
+  <div class="container">
+
+    <div>
+      <h1>converter</h1>
+      <h4 id="h4">please enter your hight</h4>
+
+    </div>
+    <div class="group">
+      <span class="text">Feet</span>
+      <input type="number" id="input1" class="form-control">
+      <span class="text">Centimeter</span>
+      <input type="text" id="input2" class="form-control">
+    </div>
+    <div>
+      <button type="button" id="btn">Submit</button>
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+  <script src="/converter.js"></script>
+  <script>
+    let input1 = document.getElementById("input1");
+let input2 = document.getElementById("input2");
+let h4 = document.getElementById("h4");
+let btn = document.getElementById("btn").addEventListener("click", function abc() {
+    if (input1.value === "") {
+        document.getElementById("h4").style.display = "block"
+
+
+    } else if (input1.value !== "") {
+        document.getElementById("h4").style.display = "none";
+        input2.value = (input1.value * 30.48 + "cm");
+        document.getElementById("input2").style.backgroundColor = "rgb(56, 56, 52)";
+        document.getElementById("input2").style.color = "white";
+
+
+
+    } else {
+        input2.value = (input1.value * 30.48 + "cm");
+    }
+});
+
+
+
+  </script>
+</body>
+
+</html>
